@@ -94,15 +94,18 @@ p {
 /* Strip */
 .strip {
   max-width: 100%;
-  min-height: 50vh;
-}
-
-.strip-content {
-  max-width: 80%;
-  margin: 2em auto;
+  /* min-height: 50vh; */
 }
 
 /* Grid */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  max-width: 70vw;
+  margin: 2em auto;
+}
+
 .grid-3col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -209,11 +212,6 @@ p {
 }
 
 /* About */
-#about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 #about-img {
   background: url("./img/Photo\ by\ Corinne\ Kutz\ on\ Unsplash.jpg");
   background-size: cover;
@@ -225,8 +223,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em 0 2em 0;
-  margin-left: 5em;
+  /* padding: 2em 0 2em 0; */
 }
 
 .about-links {
@@ -300,11 +297,6 @@ p {
   #about-img {
     width: auto;
     height: 30vh;
-  }
-
-  #about-content {
-    flex-direction: column;
-    height: auto;
   }
 
   #about-right {
