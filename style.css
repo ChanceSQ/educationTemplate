@@ -49,28 +49,8 @@ h5 {
 /* Paragraph Font */
 p {
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
   font-size: 1em;
   color: var(--text-primary);
-}
-
-/* Header List Font */
-.navigation li {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1em;
-}
-
-.navigation li a {
-  text-decoration: none;
-  color: var(--bg-secondary);
-}
-
-.navigation li a:hover {
-  color: var(--accent-secondary);
-}
-
-#active {
-  color: var(--accent-primary);
 }
 
 /* Font Alternate Colors */
@@ -101,8 +81,8 @@ p {
 
 /* Container */
 .container {
-  max-width: 100%;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -120,6 +100,16 @@ p {
 .strip-content {
   max-width: 80%;
   margin: 2em auto;
+}
+
+/* Grid */
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4em;
+  max-width: 70vw;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 
 /* Button */
@@ -149,7 +139,16 @@ p {
 }
 
 .lg-icon {
-  font-size: 4em;
+  font-size: 5em;
+}
+
+/* Back To Top Button */
+.fa-arrow-circle-up {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 2;
+  cursor: pointer;
 }
 
 /* Header */
@@ -157,6 +156,7 @@ p {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./img//Photo\ by\ Andrew\ Neel\ on\ Unsplash.jpg");
   overflow: hidden;
+  background-position: center;
 }
 
 #header-content {
@@ -177,12 +177,24 @@ p {
 }
 
 .navigation {
-  list-style: none;
   display: flex;
+  list-style: none;
 }
 
-.navigation li {
+.navigation li a {
+  text-decoration: none;
+  color: var(--bg-secondary);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
   margin-left: 1.5em;
+}
+
+.navigation li a:hover {
+  color: var(--accent-secondary);
+}
+
+#active {
+  color: var(--accent-primary);
 }
 
 /* Header Showcase Content */
@@ -198,9 +210,8 @@ p {
 
 /* About */
 #about-content {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #about-img {
@@ -208,8 +219,6 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: auto;
-  width: 50vw;
 }
 
 #about-right {
@@ -244,25 +253,27 @@ p {
 #features {
   background: var(--bg-secondary);
   text-align: center;
-  height: 100%;
   margin: 0 auto;
+  padding: 1em 0 1em 0;
+}
+
+#features-content {
+  margin-top: 4em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .feature i {
   background: var(--bg-primary);
-  height: 1.5em;
-  width: 1.5em;
-  padding: 0.25em;
+  height: 1.75em;
+  width: 1.75em;
+  padding: 0.375em;
   border-radius: 100%;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.5em;
-  max-width: 1100px;
-  margin: 0 auto;
-  margin-bottom: 2em;
+.feature h5 {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 /* Media Queries
