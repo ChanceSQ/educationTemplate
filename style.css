@@ -217,6 +217,10 @@ p {
 }
 
 /* About */
+#about-anchor {
+  content: "";
+}
+
 #about-img {
   background: url("./img/Photo\ by\ Corinne\ Kutz\ on\ Unsplash.jpg");
   background-size: cover;
