@@ -6,6 +6,7 @@
   --accent-secondary: #3dbf74;
   --bg-primary: #ffffff;
   --bg-secondary: #f1f1f1;
+  --medium-grey: #a7a7a7;
 }
 
 /* Browser sizing reset */
@@ -64,6 +65,10 @@ p {
 
 .text-accent {
   color: var(--accent-secondary);
+}
+
+.text-medium-grey {
+  color: var(--medium-grey);
 }
 
 /* Background Colors */
@@ -271,6 +276,81 @@ p {
 .feature h5 {
   margin-top: 0.5em;
   margin-bottom: 1em;
+}
+
+/* Courses */
+#courses-content {
+  background: var(--bg-primary);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#course-grid {
+  gap: 2em;
+}
+
+.course {
+  background: var(--bg-secondary);
+  margin-top: 2em;
+}
+
+.course-img {
+  width: 100%;
+  height: 15em;
+  background: red;
+}
+
+.course-text {
+  text-align: left;
+  padding: 1em;
+  border-bottom: 1px solid var(--medium-grey);
+}
+
+.course-details {
+  height: 100%;
+}
+
+.course-details h5 {
+  margin: 1em auto;
+}
+
+.course-line {
+  height: 1px;
+  width: 50%;
+  background: var(--medium-grey);
+  margin: 0 auto;
+}
+
+#course-btn {
+  margin: 2em auto 1em auto;
+  width: 80%;
+}
+
+#course-img-1 {
+  background: url("/img/Photo\ by\ UX\ Store\ on\ Unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#course-img-2 {
+  background: url("/img/Photo\ by\ William\ Bayreuther\ on\ Unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#course-img-3 {
+  background: url("/img/Photo\ by\ William\ Iven\ on\ Unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#view-all-btn:hover {
+  cursor: pointer;
+  color: var(--accent-secondary);
 }
 
 /* Media Queries
