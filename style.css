@@ -379,14 +379,12 @@ p {
 }
 
 .teacher {
+  margin: 0 auto;
+  width: 18em;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 3em;
-}
-
-#center {
-  padding-left: 5em;
 }
 
 .profile-img {
@@ -407,6 +405,7 @@ p {
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 3em auto;
 }
