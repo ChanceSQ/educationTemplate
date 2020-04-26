@@ -98,7 +98,6 @@ p {
 .container-content {
   max-width: 80%;
   margin: 2em auto;
-  border: 1px solid red;
 }
 
 /* Strip */
@@ -309,7 +308,6 @@ p {
 .course-img {
   width: 100%;
   height: 15em;
-  background: red;
 }
 
 .course-text {
