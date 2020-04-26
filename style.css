@@ -80,6 +80,39 @@ p {
   color: var(--medium-grey);
 }
 
+/* Text Input */
+.text-input {
+  margin-right: 1em;
+  height: 2.5em;
+  width: 30em;
+  background: none;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid var(--medium-grey);
+  color: var(--bg-secondary);
+}
+
+.text-input:focus {
+  border-bottom: 3px solid var(--accent-secondary);
+  outline: none;
+}
+
+/* Button */
+.btn {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.333em;
+  color: var(--bg-primary);
+  background: var(--accent-primary);
+  border: none;
+  border-radius: 2em;
+  padding: 0.25em 0.6em;
+}
+
+.btn:hover {
+  background: var(--accent-secondary);
+  cursor: pointer;
+}
+
 /* Background Colors */
 .bg-primary {
   background: var(--bg-primary);
@@ -125,22 +158,6 @@ p {
   gap: 4em;
   max-width: 70vw;
   margin: 0 auto;
-}
-
-/* Button */
-.btn {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.333em;
-  color: var(--bg-primary);
-  background: var(--accent-primary);
-  border: none;
-  border-radius: 2em;
-  padding: 0.25em 0.6em;
-}
-
-.btn:hover {
-  background: var(--accent-secondary);
-  cursor: pointer;
 }
 
 /* Icons */
@@ -419,20 +436,48 @@ p {
   margin-right: 1.5em;
 }
 
-.text-input {
-  margin-right: 1em;
-  height: 2.5em;
-  width: 30em;
-  background: none;
-  font-size: 1em;
-  border: none;
-  border-bottom: 2px solid var(--medium-grey);
-  color: var(--bg-secondary);
+/* Contact */
+#contact {
+  text-align: center;
+  padding-top: 2em;
 }
 
-.text-input:focus {
-  border-bottom: 3px solid var(--accent-secondary);
-  outline: none;
+#contact-content {
+  margin: 2em auto;
+  max-width: 80%;
+}
+
+#contact-form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.contact-input {
+  color: var(--text-primary);
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+#contact-form textarea {
+  height: 100%;
+  border: 2px solid var(--medium-grey);
+}
+
+#contact-form textarea:focus {
+  border: 3px solid var(--accent-secondary);
+}
+
+#contact-form .btn {
+  width: 5em;
+}
+
+.contact-right iframe {
+  margin-bottom: 1em;
+}
+
+.contact-right i {
+  margin-bottom: 1em;
 }
 
 /* Media Queries
