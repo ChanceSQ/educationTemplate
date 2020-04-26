@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Setting Base Font Size */
 body {
   font-size: 18px;
