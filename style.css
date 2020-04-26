@@ -54,6 +54,10 @@ p {
   color: var(--text-primary);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* Font Alternate Colors */
 .text-secondary {
   color: var(--text-secondary);
@@ -358,6 +362,39 @@ p {
 #view-all-btn:hover {
   cursor: pointer;
   color: var(--accent-secondary);
+}
+
+/* Teachers */
+#teachers {
+  padding: 2em;
+}
+
+#teachers h4 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#teachers-content {
+  margin: 0 auto;
+  max-width: 80%;
+  margin-top: 2em;
+}
+
+.teacher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+#center {
+  padding-left: 5em;
+}
+
+.profile-img {
+  width: 5em;
+  border-radius: 5em;
+  margin-right: 1em;
 }
 
 /* Media Queries
