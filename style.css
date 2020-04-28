@@ -183,6 +183,52 @@ p {
   cursor: pointer;
 }
 
+/* Menu Button */
+@media only screen and (min-width: 735px) {
+  .hamburger-menu {
+    visibility: hidden;
+  }
+}
+
+#toggle-icon {
+  position: fixed;
+  top: 1.5em;
+  right: 1em;
+  z-index: 3;
+  font-size: 1.5em;
+  color: var(--accent-primary);
+}
+
+#myLinks {
+  display: none;
+  text-align: right;
+  top: 1.5em;
+  right: 1em;
+  position: fixed;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+}
+
+#drop-menu {
+  list-style: none;
+}
+
+#drop-menu li {
+  margin-bottom: 1em;
+}
+
+#drop-menu li a {
+  text-decoration: none;
+  color: var(--bg-secondary);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
+  margin-left: 1.5em;
+}
+
+#drop-menu li a:hover {
+  color: var(--accent-secondary);
+}
 /* Header */
 #header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -538,7 +584,7 @@ p {
 
 @media only screen and (max-width: 735px) {
   .navigation {
-    visibility: hidden;
+    display: none;
   }
 
   #header-content {

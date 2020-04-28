@@ -31,14 +31,49 @@
           <i class="fab fa-leanpub text-accent md-icon"></i>
           <h4 class="text-light" id="logo-text">EDUCATION</h4>
         </div>
+        <!-- Menu Button -->
+        <div class="hamburger-menu">
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            id="toggle-icon"
+            onclick="myFunction()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
         <ul class="navigation">
-          <li><a id="active" href="#home">Home</a></li>
+          <li><a id="active" href="#header">Home</a></li>
           <li><a href="#about-anchor">About Us</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#courses">Courses</a></li>
           <li><a href="#teachers">Teachers</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
+      <!-- Dropdown menu -->
+      <div class="hamburger-menu">
+        <div id="myLinks">
+          <ul id="drop-menu">
+            <li><a id="active" href="#header">Home</a></li>
+            <li><a href="#about-anchor">About Us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
       <div
         data-aos="fade-zoom-in"
@@ -340,75 +375,75 @@
         </form>
       </div>
     </div>
-  </body>
-  <!-- Contact -->
-  <div class="strip" id="contact">
-    <h4>Contact</h4>
-    <div id="contact-content">
-      <div class="grid-2col" id="contact-grid">
-        <form id="contact-form" data-aos="fade-down" data-aos-delay="300">
-          <input
-            type="text"
-            placeholder="Name"
-            class="text-input contact-input"
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            class="text-input contact-input"
-          />
-          <textarea
-            name="message"
-            class="text-input contact-input"
-            placeholder="Message"
-          ></textarea>
-          <input type="submit" value="Send" class="btn" />
-        </form>
-        <div class="contact-right" data-aos="fade-down" data-aos-delay="300">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.521512011002!2d-79.38698112471734!3d43.64925403090688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1587937609580!5m2!1sen!2sca"
-            width="100%"
-            height="300"
-            frameborder="0"
-            style="border: 0;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-          <div class="grid-3col" id="contact-items">
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt sm-icon text-accent"></i>
-              <p class="bold">123 Main St.</p>
-              <p class="bold">Toronto, ON</p>
-              <p class="bold">M4C 1L3</p>
-            </div>
-            <div class="contact-item">
-              <i class="far fa-envelope sm-icon text-accent"></i>
-              <p class="bold">placeholder@gmail.com</p>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-phone sm-icon text-accent"></i>
-              <p class="bold">+1 (800) 888 1234</p>
+    <!-- Contact -->
+    <div class="strip" id="contact">
+      <h4>Contact</h4>
+      <div id="contact-content">
+        <div class="grid-2col" id="contact-grid">
+          <form id="contact-form" data-aos="fade-down" data-aos-delay="300">
+            <input
+              type="text"
+              placeholder="Name"
+              class="text-input contact-input"
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              class="text-input contact-input"
+            />
+            <textarea
+              name="message"
+              class="text-input contact-input"
+              placeholder="Message"
+            ></textarea>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+          <div class="contact-right" data-aos="fade-down" data-aos-delay="300">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8165.521512011002!2d-79.38698112471734!3d43.64925403090688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1587937609580!5m2!1sen!2sca"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+            <div class="grid-3col" id="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt sm-icon text-accent"></i>
+                <p class="bold">123 Main St.</p>
+                <p class="bold">Toronto, ON</p>
+                <p class="bold">M4C 1L3</p>
+              </div>
+              <div class="contact-item">
+                <i class="far fa-envelope sm-icon text-accent"></i>
+                <p class="bold">placeholder@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone sm-icon text-accent"></i>
+                <p class="bold">+1 (800) 888 1234</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="strip" id="footer">
-    <div class="container-content" id="header-content">
-      <div class="logo">
-        <i class="fab fa-leanpub text-accent md-icon"></i>
-        <h4 class="text-light" id="logo-text">EDUCATION</h4>
+    <div class="strip" id="footer">
+      <div class="container-content" id="header-content">
+        <div class="logo">
+          <i class="fab fa-leanpub text-accent md-icon"></i>
+          <h4 class="text-light" id="logo-text">EDUCATION</h4>
+        </div>
+        <ul class="navigation">
+          <li><a id="active" href="#home">Home</a></li>
+          <li><a href="#about-anchor">About Us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#teachers">Teachers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <ul class="navigation">
-        <li><a id="active" href="#home">Home</a></li>
-        <li><a href="#about-anchor">About Us</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#teachers">Teachers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
     </div>
-  </div>
+  </body>
 </html>
