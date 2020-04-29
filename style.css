@@ -26,6 +26,12 @@ body {
   font-size: 18px;
 }
 
+/* a tag styling removed */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Header Fonts */
 h1,
 h2,
